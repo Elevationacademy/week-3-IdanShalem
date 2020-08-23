@@ -1,0 +1,12 @@
+{
+    "name": "Gray Wolf",
+    "weight": 40,
+    "livingEnv": "wilderness and remote areas",
+    "endangered": true,
+    "foodEating": {
+        "Animals":["Elk", "Moose", "Caribou", "White-tailed deer", "Mule deer", "Red deer", "Roe deer", "Wild boar"],
+        "Fruits": ["Apples", "Pears", "Figs", "Melons", "Berries", "Cherries" ,"Blueberries", "Raspberries"]
+    },
+    "eatenBy": ["Brown bear", "Cougar", "striped hyenas"],
+    "delicious": 2
+}

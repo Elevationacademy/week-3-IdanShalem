@@ -23,6 +23,7 @@ const renderApts = function (apartments) {
 
     const newHTML = template({apartments})
 
+
     $('#results').append(newHTML)
 }
 
