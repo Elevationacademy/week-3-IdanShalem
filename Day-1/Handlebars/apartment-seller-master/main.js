@@ -9,7 +9,6 @@ $("button").on("click", function () {
     let parking = $("#park-y")
 
     let relevantApts = findRelevantApts(address, minPrice, maxPrice, minRooms, maxRooms, immediate, parking)
-    console.log(relevantApts)
     renderApts(relevantApts)
 })
 

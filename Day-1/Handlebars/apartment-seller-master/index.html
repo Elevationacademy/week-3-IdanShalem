@@ -39,24 +39,24 @@
         {{#if apartments}}
             {{#each apartments}}
                 <div class="result">
-                    <img src={{this.img}}></img> 
+                    <img src={{img}}></img> 
                     <p class='label l-addr'>Addres:</p>
-                    <p class='address'>{{this.address}}</p> 
+                    <p class='address'>{{address}}</p> 
                     <p class='label l-price'>Price:</p>
-                    <p class='price'>{{formatCurrency this.price}} $</p> 
+                    <p class='price'>{{formatCurrency price}} $</p> 
                     <p class='label l-rooms'>Rooms:</p>
-                    <p class='rooms'>{{this.rooms}}</p>
-                    {{#if this.immediate}}
+                    <p class='rooms'>{{rooms}}</p>
+                    {{#if immediate}}
                         <p class='label l-immediate'>Contact details:</p>
-                        <p class='immediate'>{{this.contactDetails.name}}: {{this.contactDetails.email}}</p>
+                        <p class='immediate'>{{contactDetails.name}}: {{contactDetails.email}}</p>
                     {{/if}}
-                    {{#if this.parking}}
+                    {{#if parking}}
                         <p class='label l-park'>Parking:</p>
                         <p class='parking'>Parking is available</p>
                     {{/if}}
                     <span class="label l-features">Features:</span>
                     <div class="features">
-                        {{#each this.features}}
+                        {{#each features}}
                             <span> {{this}}</span>
                         {{/each}}
                     </div>
