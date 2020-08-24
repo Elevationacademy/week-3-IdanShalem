@@ -1,0 +1,16 @@
+#gifs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-self: center;
+    align-self: center;
+}
+.gif{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-self: center;
+    align-self: center;
+}
+.add{
+    justify-self: center;
+    align-self: start;
+}

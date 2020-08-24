@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <script id="fav-gifs-t" type="text/x-handlebars-template">
+        {{#each favoriteGifs}}
+            <iframe src={{this}}></iframe>
+        {{/each}}
+    </script>
+    
+    <script id="gifs-t" type="text/x-handlebars-template">
+            {{#each embedURLs}}
+                {{#if this}}
+                    <div class='gif'>
+                        <iframe src={{this}}></iframe>
+                        <button class="add">Add</button>
+                    </div>
+                {{/if}}
+            {{/each}}   
+    </script>
+    <h1 id="favs">Favorite GIFs</h1>
+    <input type="text" id="search">
+    <button id="submit">Search</button>
+    <div id="gifs"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
