@@ -13,7 +13,7 @@ $("button").on("click", function () {
 })
 
 Handlebars.registerHelper('formatCurrency', function(value) {
-    return value.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+    return value.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + '$';
 });
 
 const renderApts = function (apartments) {
