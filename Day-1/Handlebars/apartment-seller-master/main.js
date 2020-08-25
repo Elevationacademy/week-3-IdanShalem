@@ -12,9 +12,9 @@ $("button").on("click", function () {
     renderApts(relevantApts)
 })
 
-Handlebars.registerHelper('formatCurrency', function(value) {
-    return value.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + '$';
-});
+// Handlebars.registerHelper('formatCurrency', function(value) {
+//     return value.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + '$';
+// });
 
 const renderApts = function (apartments) {
     $("#results").empty()

@@ -1,0 +1,14 @@
+{
+  "name": "apartment-seller-master",
+  "version": "1.0.0",
+  "description": "Handlebars Project",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "currencyformatter.js": "^2.2.0"
+  }
+}
